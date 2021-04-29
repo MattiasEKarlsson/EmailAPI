@@ -29,7 +29,7 @@ namespace EmailAPI.Controllers
                         client.EnableSsl = true;
                         client.DeliveryMethod = SmtpDeliveryMethod.Network;
                         client.UseDefaultCredentials = false;
-                        client.Credentials = new NetworkCredential("kenkataservice@gmail.com", "Password");
+                        client.Credentials = new NetworkCredential("kenkataservice@gmail.com", "password");
 
                         MailMessage message = new MailMessage();
                         message.To.Add(email.To);
